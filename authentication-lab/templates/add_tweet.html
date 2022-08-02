@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-    Great Job!
+<body style = "background-color: #ADD8E6;">
+    <form method="POST" action="/add_tweet">
+        <label>Title for your post</label><br>
+        <input type="text"  name="Title">
+        <br>
+        <br>
+
+        <label>Post Here</label><br>
+        <input type="text"  name="post" maxlength="280">
+        <br>
+
+        <br>
+        <a href="/add_tweet"><button>Submit</button></a>
+    </form>
+    
+    <br>
+    <div>    <a href="/all_tweets"><button>your tweets</button></a>
+    </div>
+    <br>
 
     <a href="/"><button type = "button">SIGHNOUT</button></a>
+    <!-- <a href="/"><button type = "button">SIGHNOUT</button></a> -->
 </body>
 </html>

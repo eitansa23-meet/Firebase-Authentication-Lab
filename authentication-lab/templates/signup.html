@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Signup</title>
 </head>
-<body>
+<body style = "background-color: #ADD8E6;">
     <form method="post" action="/signup">
         <!-- Heading -->
         <h4>
@@ -15,6 +15,22 @@
         <p >
             Please fill up your information below to sign up.
         </p>
+
+        <!-- full_name -->
+        <div>
+            <label>Full Name*</label>
+            <div class="input-group">
+                <input type="text"  name="name" maxlength="12">
+            </div>
+        </div>
+
+        <!-- username -->
+        <div>
+            <label>Username*</label>
+            <div class="input-group">
+                <input type="text"  name="username" maxlength="12">
+            </div>
+        </div>
 
         <!-- Email -->
         <div>
@@ -31,6 +47,16 @@
                 <input type="password"  name="password" minlength="6">
             </div>
         </div>
+
+        <!-- Bio -->
+        <div>
+            <label>Bio (Up to 280 characters)*</label>
+            <div class="input-group">
+                <input type="text"  name="name" maxlength="280">
+            </div>
+        </div>
+
+        
         
         <!-- Button -->
         <div>
@@ -40,4 +66,4 @@
     <br>
     <a href="/"><button>signin</button></a>
 </body>
-</html>
+</html>                    
